@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    /* Primary */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template: 1fr 1fr;
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    margin: 125px 165px 100px;
+}
+
+#top {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    padding-bottom: 0px;
+    height: 300px;
+}
+
+h1 {
+    color: var(--very-dark-magenta);
+    display: inline;
+}
+
+
+#top p {
+    width: 370px;
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: var(--dark-grayish-magenta);
+}
+
+#ratings {
+    justify-content: end;
+}
+
+#ratings p {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    background-color: var(--light-grayish-magenta);
+    height: 50px;
+    text-align: left;
+    padding-left: 180px;
+    padding-top: 18px;
+    background-image: url(images/icon-star.svg),
+                      url(images/icon-star.svg),
+                      url(images/icon-star.svg),
+                      url(images/icon-star.svg),
+                      url(images/icon-star.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 30px center, 55px center, 80px center, 105px center, 130px center;
+    margin-bottom: 20px;
+}
+
+
+#bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.buyer {
+    background-color: var(--very-dark-magenta);
+    color: var(--white);
+    font-size: 12px;
+    height: 230px;
+    width: 348px;
+    position: relative;
+    border-radius: 7.5px;
+}
+
+.buyer:nth-child(2) {
+    top: 15px;
+}
+
+.buyer:nth-child(3) {
+    top: 30px;
+}
+
+.buyer h2, .buyer h3 {
+    text-align: left;
+    position: absolute;
+}
+
+.buyer h2 {
+    font-size: 12px;
+    font-weight: 700;
+    top: 50px;
+    left: 85px;
+}
+
+.buyer h3 {
+    color: var(--soft-pink);
+    font-size: 12px;
+    font-weight: 400;
+    top: 65px;
+    left: 85px;
+}
+
+.buyer p {
+    font-size: 12px;
+    line-height: 1.8em;
+    width: 290px;
+    position: absolute;
+    margin: 100px 10px 5px 25px;
+}
+
+img {
+    float: left;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    width: 40px;
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
