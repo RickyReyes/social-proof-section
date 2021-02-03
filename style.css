@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
 
+/* Color Variables */
 :root {
     /* Primary */
     --very-dark-magenta: hsl(300, 43%, 22%);
@@ -25,18 +26,16 @@ body {
     margin: 125px 165px 100px;
 }
 
+/* Main text and ratings section */
 #top {
     display: grid;
-    grid-template-columns: 240px 1fr;
-    padding-bottom: 0px;
+    grid-template-columns: 300px 1fr;
     height: 300px;
 }
 
 h1 {
     color: var(--very-dark-magenta);
-    display: inline;
 }
-
 
 #top p {
     width: 370px;
@@ -47,12 +46,8 @@ h1 {
     color: var(--dark-grayish-magenta);
 }
 
-#ratings {
-    justify-content: end;
-}
-
 #ratings p {
-    display: block;
+    display: inline-block;
     font-size: 12px;
     font-weight: 700;
     color: var(--very-dark-magenta);
@@ -69,6 +64,7 @@ h1 {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 30px center, 55px center, 80px center, 105px center, 130px center;
     margin-bottom: 20px;
+    justify-items: right;
 }
 
 
@@ -132,8 +128,6 @@ img {
     left: 25px;
     width: 40px;
 }
-
-
 
 .attribution {
     font-size: 11px;
