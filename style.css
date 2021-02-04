@@ -23,7 +23,7 @@ body {
     grid-template: 1fr 1fr;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
-    margin: 90px 165px 100px;
+    margin: 110px 165px;
 }
 
 /* Main text and ratings section */
@@ -62,13 +62,15 @@ h1 {
     height: 50px;
     text-align: left;
     padding-left: 180px;
+    padding-top: 15px;
     background-image: url(images/icon-star.svg),
                       url(images/icon-star.svg),
                       url(images/icon-star.svg),
                       url(images/icon-star.svg),
                       url(images/icon-star.svg);
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat;
     background-position: 30px center, 55px center, 80px center, 105px center, 130px center;
+    border-radius: 7px;
     
 }
 
@@ -91,22 +93,19 @@ h1 {
     right: 0;
 }
 
-
-
-
 #bottom {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 0px;
     margin-top: 75px;
 }
 
 .buyer {
     background-color: var(--very-dark-magenta);
     color: var(--white);
-    font-size: 12px;
+    font-size: 14px;
     height: 230px;
-    width: 348px;
+    width: 340px;
     position: relative;
     border-radius: 7.5px;
 }
@@ -142,9 +141,9 @@ h1 {
 .buyer p {
     font-size: 12px;
     line-height: 1.8em;
-    width: 290px;
+    width: 270px;
     position: absolute;
-    margin: 100px 10px 5px 25px;
+    margin: 100px 20px 20px 30px;
 }
 
 img {
@@ -160,6 +159,21 @@ img {
     font-size: 11px;
     text-align: center;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* TOP BG SVG */
+.svg-top  {
+    position: fixed;
+    top: -48px;
+    left: 1px;
+}
+
+/* BOTTOM BG SVG */
+.svg-bottom {
+    position: fixed;
+    bottom: -20px;
+    right: -15px;
 }
