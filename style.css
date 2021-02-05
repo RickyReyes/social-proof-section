@@ -23,7 +23,7 @@ body {
     grid-template: 1fr 1fr;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
-    margin: 110px 165px;
+    margin: 110px 165px 80px;
 }
 
 /* Main text and ratings section */
@@ -96,8 +96,9 @@ h1 {
 #bottom {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0px;
+    grid-gap: 2%;
     margin-top: 75px;
+    
 }
 
 .buyer {
@@ -126,7 +127,7 @@ h1 {
 .buyer h2 {
     font-size: 12px;
     font-weight: 700;
-    top: 50px;
+    top: 47px;
     left: 85px;
 }
 
@@ -151,7 +152,7 @@ img {
     border-radius: 50%;
     position: absolute;
     top: 40px;
-    left: 25px;
+    left: 30px;
     width: 40px;
 }
 
@@ -167,13 +168,13 @@ img {
 /* TOP BG SVG */
 .svg-top  {
     position: fixed;
-    top: -48px;
-    left: 1px;
+    top: -28px;
+    left: 0px;
 }
 
 /* BOTTOM BG SVG */
 .svg-bottom {
     position: fixed;
-    bottom: -20px;
-    right: -15px;
+    bottom: -30px;
+    right: 0px;
 }
