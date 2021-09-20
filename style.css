@@ -23,24 +23,31 @@ Mobile first!!
   font-family: Spartan, sans-serif;
 }
 
+.svg-bottom {
+  bottom: 0;
+  right: 0;
+}
+
 body {
-  margin: 0 1.5rem;
-  padding: 0;
+  padding: 0 1.5rem;
   position: relative;
+  overflow-x: hidden;
 }
 
 .svg-top, .svg-bottom {
   position: absolute;
   z-index: -1;
+  width: 100%;
 }
 
 .svg-top {
   top: 0;
+  left: 0;
 }
 
 .svg-bottom {
   bottom: 0;
-  right: 0;
+  right: -325px;
 }
 
 h1, .intro-p {
@@ -139,13 +146,13 @@ h1 {
   text-align: center;
   position: absolute;
   font-size: .7rem;
-  bottom: -5.8rem;
+  bottom: -6rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
   body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157,10 +164,14 @@ h1 {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    margin: 0;
+    margin: 0 auto;
+  }
+  .svg-bottom {
+    bottom: -50px;
+    right: -360px;
   }
   h1 {
-    font-size: clamp(1.8rem, 3vw, 3rem);
+    font-size: clamp(1.5rem, 3vw, 3rem);
     text-align: left;
     max-width: 450px;
     padding-left: 0;
@@ -208,11 +219,11 @@ h1 {
   }
   .ratings .rating:nth-child(1) {
     position: relative;
-    right: 6em;
+    right: 8vw;
   }
   .ratings .rating:nth-child(2) {
     position: relative;
-    right: 3em;
+    right: 4vw;
   }
   .ratings .rating:nth-child(3) {
     margin-bottom: 0;
@@ -227,8 +238,16 @@ h1 {
   .reviews .buyer {
     max-width: 350px;
   }
+  .reviews .buyer:nth-child(2) {
+    position: relative;
+    top: 1.2rem;
+  }
+  .reviews .buyer:nth-child(3) {
+    position: relative;
+    top: 2.4rem;
+  }
   .attribution {
-    bottom: 1.5rem;
+    bottom: -4em;
   }
 }
 /*# sourceMappingURL=style.css.map */
