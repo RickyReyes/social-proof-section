@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/RickyReyes/social-proof-section](https://github.com/RickyReyes/social-proof-section)
-- Live Site URL: [https://social-proof-section-tau-ochre.vercel.app/](https://social-proof-section-tau-ochre.vercel.app/);
+- Live Site URL: [https://social-proof-section-tau-ochre.vercel.app/](https://social-proof-section-tau-ochre.vercel.app/)
 
 ## My process
 
