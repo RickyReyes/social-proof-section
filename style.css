@@ -15,21 +15,8 @@ body {
   overflow-x: hidden;
 }
 
-.svg-top,
-.svg-bottom {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-}
-
-.svg-top {
-  top: 0;
-  left: 0;
-}
-
-.svg-bottom {
-  bottom: 0;
-  right: -325px;
+.svg-top, .svg-bottom {
+  display: none;
 }
 
 h1,
@@ -149,6 +136,17 @@ h1 {
     width: 100vw;
     overflow: hidden;
     margin: 0 auto;
+  }
+  .svg-top,
+  .svg-bottom {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+  .svg-top {
+    top: 0;
+    left: 0;
   }
   .svg-bottom {
     bottom: -50px;
